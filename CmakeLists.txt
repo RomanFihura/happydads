@@ -1,0 +1,10 @@
+set(PROJECT_NAME "happydads")
+
+set(SOURCES happydads.cpp)
+
+set(TEST_SOURCES ${SOURCES} happydads.cpp)
+
+add_executable(test-${PROJECT_NAME} ${TEST_SOURCES})
+target_link_libraries(test-${PROJECT_NAME} GTest::gtest GTest::gtest_main GTest::gmock)
+
+gtest_discover_tests(test-${PROJECT_NAME})
