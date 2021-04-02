@@ -1,12 +1,12 @@
-#include "happydads.cpp"
+#include "happydads.h"
 
-//#include <gmock/gmock.h>
+#include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
 TEST(happydads, error)
 {
-    uint32_t expected = 1;
-    uint32_t error = expected / 10;
+    double expected = 1.0;
+    double error = expected / 10;
     uint32_t runs = 5000;
 
     uint32_t total = 0;
@@ -15,6 +15,6 @@ TEST(happydads, error)
     {
         total += attempt();
     }
-    uint32_t actualrelation = (runs/ (total-runs));
+    double actualrelation = (static_cast <double>(runs)/ (total-runs));
     EXPECT_NEAR(actualrelation, expected, error);
 }

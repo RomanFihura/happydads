@@ -1,6 +1,6 @@
 #include <iostream>
 #include <random>
-#include "happydads.cpp"
+#include "happydads.h"
 #define  N 1000
 uint32_t attempt();
 int main()
