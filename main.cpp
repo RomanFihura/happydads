@@ -13,4 +13,5 @@ int main()
  double actualrelation= (N / (children - N));
  std::cout << "boys/girls = " <<actualrelation;
  return 0;
+ 
 }
