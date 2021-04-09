@@ -6,7 +6,7 @@
 TEST(happydads, error)
 {
     double expected = 1.0;
-    double error = expected / 10;
+    double error = expected /10;
     uint32_t runs = 5000;
 
     uint32_t total = 0;
